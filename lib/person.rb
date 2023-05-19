@@ -10,6 +10,23 @@ class Person
     @happiness = 8
     @hygiene = 8
   end
+  def happiness
+    @happiness
+  end
+
+
+  def happiness=(value)
+    if value > 10
+      @happiness = 10
+    elsif value < 0
+      @happiness = 0
+    else
+      @happiness = value
+    end
+  end
+
+
+ 
 end    
 
 
