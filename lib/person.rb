@@ -37,6 +37,13 @@ class Person
       @hygiene = value
     end
   end
+
+  def clean?
+    hygiene > 7
+  end
+
+
+
 end   
 
 
