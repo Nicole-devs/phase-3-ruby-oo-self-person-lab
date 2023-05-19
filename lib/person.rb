@@ -43,6 +43,11 @@ class Person
   end
 
 
+  def happy?
+    happiness > 7
+  end
+
+
 
 end   
 
