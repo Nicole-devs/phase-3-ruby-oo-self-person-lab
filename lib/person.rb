@@ -10,6 +10,8 @@ class Person
     @happiness = 8
     @hygiene = 8
   end
+
+
   def happiness
     @happiness
   end
@@ -24,9 +26,12 @@ class Person
       @happiness = value
     end
   end
+
+
   def hygiene
     @hygiene
   end
+
 
   def hygiene=(value)
     if value > 10
@@ -37,6 +42,7 @@ class Person
       @hygiene = value
     end
   end
+
 
   def clean?
     hygiene > 7
@@ -50,12 +56,14 @@ class Person
 
   def get_paid(amount)
     self.bank_account += amount
-    "all about the benjamins"
-    
+    "all about the benjamins"  
   end
 
 
-
+  def take_bath
+    self.hygiene += 4
+    "♪ Rub-a-dub just relaxing in the tub ♫"
+  end
 end   
 
 
