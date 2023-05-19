@@ -71,6 +71,13 @@ class Person
     self.happiness +=2
     "♪ another one bites the dust ♫"
   end
+
+
+  def call_friend(friend)
+    self.happiness += 3
+    friend.happiness += 3
+    "Hi #{friend.name}! It's #{@name}. How are you?"
+  end
 end   
 
 
