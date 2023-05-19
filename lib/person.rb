@@ -24,10 +24,20 @@ class Person
       @happiness = value
     end
   end
+  def hygiene
+    @hygiene
+  end
 
-
- 
-end    
+  def hygiene=(value)
+    if value > 10
+      @hygiene = 10
+    elsif value < 0
+      @hygiene = 0
+    else
+      @hygiene = value
+    end
+  end
+end   
 
 
   
